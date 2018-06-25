@@ -9,7 +9,7 @@ Given the movement history (e.g., historical trajactory/check-in logs) for massi
 This work is part of our ongoing project, namely Movement-Aware Location Selection (MALOS). Besides PINOCCHIO, given the movement history (e.g., historical trajactory/check-in logs) for massive users, we've also conducted research works on several other problems, including:
 - Find the best location to deploy the next branch, if there are *k* existing facilities in the region.
 - Find a facility, from *k* existing ones, and relocate it to another place such that the utility can be maximized.
-- Find k location to place facilities such that the aggregated utility can be maximized.
+- Find *k* location to place facilities such that the aggregated utility can be maximized.
 
 
 Environment
