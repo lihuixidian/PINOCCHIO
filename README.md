@@ -15,33 +15,32 @@ This work is part of our ongoing project, namely Movement-Aware Location Selecti
 Environment
 ----------
 1. These experiments are implementes in C++.<br>
-2. Run on 1.8 GHz machine with 4 GB RAM under Windows 8.1(64 bit).<br>
-3. IDE is VS 2013.
+2. IDE is VS 2013.
 
 Dataset
 ----------
 1. There are two datasets which are recorded by two text files(`checkins-10162.txt` and `checkins-2321.txt`).<br>
     * checkins-10162.txt: 10162 users from Gowalla located in California.
     * checkins-2321.txt: 2321 users from Foursquare located in Singapore.
-2. The trajectory of user is consist of username and a series of check-in points.<br>
-3. Candidate sets are randomly generated from check-in points in these user trajectories.
+2. The trajectory of user consist of username and a series of check-in points.<br>
+3. Candidate sets are randomly generated from check-in points.
 
 Algorithm
 ----------
 1. `NA` : A baseline method that exhaustively computes the cumulative influence probabilities for all pairs of candidate location and moving object, based on which we retrieve the most influential candidate.<br>
-2. `PIN` : PINOCCHIO algorithm described in Algorithm 2.<br>
-3. `PIN-VO` : PINOCCHIO-VO algorithm described in Algorithm3.<br>
+2. `PIN` : PINOCCHIO algorithm described in Algorithm 2 in our TKDE paper.<br>
+3. `PIN-VO` : PINOCCHIO-VO algorithm described in Algorithm3 in our TKDE paper.<br>
 
 Supplement
 ----------------
 
 1. `PLS.cpp `: Main function. <br>
-2. `pino.cpp`: This file contains the implements of all algorithoms(eg. NA,PIN,PIN-VO) in this paper.<br>
+2. `pino.cpp`: This file contains the implements of all algorithoms (eg., NA,PIN,PIN-VO) in our TKDE paper.<br>
 
 Usage
 ----------
-1. All data files should be placed in '`D:\Experiment\PLS\Release`'.<br>
-2. We should load `boost library` in this project which provides some methods about R-tree.<br>
+1. All data files should be placed in a local folder named as 'Release', e.g., '`D:\Experiment\PLS\Release`'.<br>
+2. We should load `boost library` in this project which provides corresponding utilities with respect to R-tree.<br>
 3. There are some precompiles in program.<br>
     
     `CANDIDATES_GENERATION` : Generate candidates.<br>
